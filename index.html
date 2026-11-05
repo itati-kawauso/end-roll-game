@@ -2,20 +2,70 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- Title & Basic Metadata -->
     <title>THE END ROLLER - エンドロール・プレイグラウンド</title>
     <meta name="description" content="映画の黒背景と白文字のエンドロールの上で遊べる新感覚シネマアクションゲーム。サバイバー、インベーダー、違和感捜査官の3つのモードを搭載。" />
+    <meta name="keywords" content="エンドロール, ゲーム, インベーダー, サバイバー, アノマリー, ミニゲーム, ブラウザゲーム, React, Vite" />
+    <meta name="author" content="THE END ROLLER Project" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Theme & Mobile App Appearance -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="END ROLLER" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Favicon: Inline SVG cinema reel icon (works everywhere without extra network requests) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Cpath d='M6 6h20v20H6z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='2' fill='%23fff'/%3E%3Ccircle cx='20' cy='12' r='2' fill='%23fff'/%3E%3Ccircle cx='12' cy='20' r='2' fill='%23fff'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23fff'/%3E%3Cpath d='M14 16l6-3v6z' fill='%23fbbf24'/%3E%3C/svg%3E" />
+    <link rel="alternate icon" href="./favicon.ico" />
+    
+    <!-- Open Graph (Social Sharing / Facebook / Discord) -->
     <meta property="og:title" content="THE END ROLLER - エンドロール・プレイグラウンド" />
     <meta property="og:description" content="映画の黒背景と白文字のエンドロールの上で遊べる新感覚シネマアクションゲーム。サバイバー、インベーダー、違和感捜査官の3つのモードを搭載。" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="THE END ROLLER" />
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Noto+Serif+JP:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="twitter:title" content="THE END ROLLER - エンドロール・プレイグラウンド" />
+    <meta name="twitter:description" content="映画の黒背景と白文字のエンドロールの上で遊べる新感覚シネマアクションゲーム。サバイバー、インベーダー、違和感捜査官の3つのモードを搭載。" />
+
+    <!-- Google Web Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Noto+Serif+JP:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for Search Engines & Social Platforms -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "THE END ROLLER - エンドロール・プレイグラウンド",
+      "description": "映画の黒背景と白文字のエンドロールの上で遊べる新感覚シネマアクションゲーム。サバイバー、インベーダー、違和感捜査官の3つのモードを搭載。",
+      "genre": ["Action", "Arcade", "Retro", "Cinema Parody"],
+      "playMode": "SinglePlayer",
+      "inLanguage": "ja",
+      "applicationCategory": "Game"
+    }
+    </script>
   </head>
   <body class="bg-black text-white antialiased overflow-hidden select-none">
+    <noscript>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;background:#000;color:#fff;font-family:sans-serif;text-align:center;padding:24px;">
+        <h1 style="font-size:24px;margin-bottom:12px;letter-spacing:0.1em;">THE END ROLLER</h1>
+        <p style="color:#aaa;max-width:480px;line-height:1.6;">
+          本ゲームをお楽しみいただくには、ブラウザでJavaScriptを有効にしてください。<br>
+          Please enable JavaScript in your browser to play THE END ROLLER.
+        </p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
