@@ -1,0 +1,6 @@
+{
+  "name": "THE END ROLLER - エンドロール・プレイグラウンド",
+  "description": "映画の黒背景と白文字のエンドロールの上で遊べる新感覚シネマアクションゲーム。サバイバー、インベーダー、違和感捜査官の3つのモードを搭載。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
